@@ -1,6 +1,6 @@
 @import "normalize.css";
 
-body, div, span {
+div, span {
 	box-sizing: border-box;
 	position: relative;
 
@@ -15,11 +15,78 @@ body, div, span {
 	padding: 0;
 }
 
-body, html {
-	width: 100%;
-	height: 100%;
+body {
+	background-color: #1F1E34;
+	color: #FFF;
+	font-family: "Avenir Next",
+	"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+	Arial, "Lucida Grande", sans-serif;
+	font-weight: 100;
 }
 
-body {
+h1 {
+	font-size: 64px;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 100;
+}
+
+p {
+	font-size: 24px;
+}
+
+a {
+	font-weight: 400;
+	color: #FFF;
+}
+
+a:hover {
+	font-weight: 400;
+	color: #DADADA;
+	text-decoration: none;
+}
+
+.section-debug {
+	border: 2px solid #FFF;
+}
+
+.section {
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.nav {
+	flex-direction: row;
+	align-self: center;
+	justify-content: center;
+}
+.nav a {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.section-2 {
+	flex-direction: row;
+}
+.iphone-demo {
+	flex-direction: column;
+	flex-grow: 1;
+	flex-basis: 0;
+	align-items: center;
+	justify-content: center;
+	align-self: stretch;
 	background-color: rgba(255,0,0,0.3);
+}
+
+.feature-description {
+	flex-direction: column;
+	flex-grow: 1;
+	flex-basis: 0;
+	align-items: flex-start;
+	justify-content: center;
+	align-self: stretch;
+	background-color: rgba(0,255,0,0.3);
 }
