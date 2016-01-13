@@ -513,6 +513,9 @@ a:hover {
 #intro-section * {
 	z-index: 2;
 }
+.react-logo {
+	position: relative;
+}
 .nav {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
@@ -614,6 +617,7 @@ a:hover {
 
 #slider-control {
 	position: fixed;
+	z-index: 2;
 	left: 100%;
 	top: 50%;
 	-webkit-transform: translate(-100%, -50%);

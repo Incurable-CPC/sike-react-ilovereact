@@ -67,6 +67,9 @@ a:hover {
 #intro-section * {
 	z-index: 2;
 }
+.react-logo {
+	position: relative;
+}
 .nav {
 	flex-direction: row;
 	align-self: center;
