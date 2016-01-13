@@ -119,6 +119,7 @@ a:hover {
 
 #slider-control {
 	position: fixed;
+	z-index: 2;
 	left: 100%;
 	top: 50%;
 	transform: translate(-100%, -50%);
