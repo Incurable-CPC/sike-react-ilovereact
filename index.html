@@ -39,10 +39,10 @@
 	</a>
 </div>
 
-<div class="overlay">
-</div>
+<div class="overlay"></div>
+<div id="scroll-overlay"></div>
 <div id="intro-section" class="section">
-	<img class="react-logo" src="img/react-logo.svg"/>
+	<img id="react-logo" src="img/react-logo.svg"/>
 	<h1>Build Native Apps With React</h1>
 	<div class="nav">
 		<a href="#native">
@@ -59,7 +59,8 @@
 		</a>
 	</div>
 </div>
-<div id="native" class="section section-2">
+
+<div id="iphone-overlay">
 	<div class="iphone-demo">
 		<div>
 			<img src="img/iphone-frame.svg">
@@ -68,6 +69,8 @@
 			</div>
 		</div>
 	</div>
+</div>
+<div id="native" class="section section-2">
 	<div class="feature-description">
 		<h2>Native Experience</h2>
 		<p>
@@ -78,14 +81,6 @@
 	</div>
 </div>
 <div id="touch" class="section section-2">
-	<div class="iphone-demo">
-		<div>
-			<img src="img/iphone-frame.svg"/>
-			<div class="dome">
-				<img src="img/swype-demo.jpg"/>
-			</div>
-		</div>
-	</div>
 	<div class="feature-description">
 		<h2>Touches &amp; Gestures</h2>
 		<p>
@@ -101,6 +96,9 @@
 </div>
 <script type="text/javascript" src="js/TweenMax.js"></script>
 <script type="text/javascript" src="js/ScrollToPlugin.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -60,6 +60,31 @@ function addSmoothScrolling() {
     }
 }
 
+function addScrollMagic() {
+    var controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+        triggerElement: "#native",
+        triggerHook: "onEnter",
+        duration: "100%"
+    }).addTo(controller)
+        .setTween("#scroll-overlay", 0.5, { opacity: 1 });
+
+    new ScrollMagic.Scene({
+        triggerElement: "#native",
+        triggerHook: "onEnter",
+        duration: "100%"
+    }).addTo(controller)
+        .setTween("#iphone-overlay", 1, { width: "50%", y: 0 });
+
+    new ScrollMagic.Scene({
+        triggerElement: "#native",
+        triggerHook: "onLeave",
+        duration: "100%"
+    }).addTo(controller)
+        .setPin("#iphone-overlay");
+
+}
+
 window.onscroll = function() {
     updateSliderControl();
 };
@@ -69,4 +94,5 @@ window.onload = function() {
     animateRobot();
     updateSliderControl();
     addSmoothScrolling();
+    addScrollMagic();
 };
